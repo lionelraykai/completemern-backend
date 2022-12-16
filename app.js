@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", middleware, (req, res) => {
+  res.cookie("Test","again")
   res.send("welcome to About page of mernstack");
 });
 
